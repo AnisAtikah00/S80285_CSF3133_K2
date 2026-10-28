@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Problem A : Faculty Event Page with Schedule and Registration</title>
+    </head>
+    <body>
+        <header>
+            <h1>Programming Workshop</h1>
+            <p>Enchange your coding skill</p>
+        </header>
+        <nav>
+            <a herf="#schedule">Event Schedule</a>
+            <a herf="#register">Registration</a>
+            <a herf="#about">About the Event</a>
+        </nav>
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>Join our faculty </p>
+            <article>
+                <h3>Speaker 1:Dr Anis</h3>
+                <p>Dr Nurul is a senior lecturer specialized in software Engineering</p>
+            </article>
+            <article>
+                <h4>Speaker 2:Mr Danial Fahim</h4>
+                <p>Mr Danial Fahim is an industry practitioner who will guide participant through hand practicle</p>
+            </article>
+        </section>
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table border ="1">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Venue</th>
+                        <th>Person in Charge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><td>09:00 AM - 10:00 AM</td>
+                        <td>Opening Keynote</td>
+                        <td rowspan="2">Main Auditorium</td>
+                        <td>Dr. Anis</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Backend Web Development Mastery</td>
+                        <td>Prof. Kar Hui Cheng</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM - 01:30 PM</td>
+                        <td colspan="3">Lunch Break and Networking</td>
+                    </tr>
+                    <tr>
+                        <td>01:30 PM - 03:00 PM</td>
+                        <td>Frontend Basics with HTML &amp; CSS</td>
+                        <td>CISCO</td>
+                        <td>Mr. Danial Fahim</td>
+                    </tr>
+                    <tr>
+                        <td>03:00 PM - 04:30 PM</td>
+                        <td>Interactive Hack Hour Challenge</td>
+                        <td>CISCO</td>
+                        <td>Dr. Anis</td>
+                    </tr>
+                    <tr>
+                        <td>04:30 PM - 05:00 PM</td>
+                        <td>Closing Ceremony &amp; Prize Giving</td>
+                        <td>Main Auditorium</td>
+                        <td>Prof. Kar Hui Cheng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id = "register">
+            <h2>Registration Form</h2>
+            <form action = "register.html" method="post">
+                <p>
+                 <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+                <p>
+                    <label for="matric">Matric Number:</label>
+                    <input type="text" id="matric" name="matric" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <fieldset>
+                    <legend>Year of Study:</legend>
+                    <input type="radio" id="year1" name="year_of_study" value="Year 1">
+                    <label for="year1">Year 1</label><br>
+                    <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                    <label for="year2">Year 2</label><br>
+                    <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                    <label for="year3">Year 3</label><br>
+                    <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                    <label for="year4">Year 4</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Sessions to Join (At least 3 choices):</legend>
+                    <input type="checkbox" id="session1" name="sessions" value="Keynote">
+                    <label for="session1">Opening Keynote</label><br>
+                    <input type="checkbox" id="session2" name="sessions" value="Backend">
+                    <label for="session2">Backend Web Development Mastery</label><br>
+                    <input type="checkbox" id="session3" name="sessions" value="Frontend">
+                    <label for="session3">Frontend Basics with HTML &amp; CSS</label><br>
+                    <input type="checkbox" id="session4" name="sessions" value="HackHour">
+                    <label for="session4">Interactive Hack Hour Challenge</label>
+                </fieldset>
+                <p>
+                    <label for="programme">Programme / Faculty:</label>
+                    <select id="programme" name="programme">
+                        <option value="CS">Bachelor of Computer Science</option>
+                        <option value="SE">Bachelor of Software Engineering</option>
+                        <option value="IT">Bachelor of Information Technology</option>
+                        <option value="IS">Bachelor of Information Systems</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Submit Registration">
+                </p>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Organised by the Faculty Computer Science Committee. &copy; 2026 All Rights Reserved.</p>
+    </footer>
+            </form>
+        </section>
+    </body>
+</html>
