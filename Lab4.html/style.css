@@ -1,0 +1,146 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+}
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+}
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+    color: #d1e8ff;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+section {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+article h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+article p {
+    margin-bottom: 10px;
+}
+
+figure {
+    text-align: center;
+}
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #003366;
+}
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group > label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #003366;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+.inline-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inline-options label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: #003366;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
