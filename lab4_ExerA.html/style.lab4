@@ -1,0 +1,170 @@
+/* General Page Styling & Responsive Layout */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #222222;
+  background-color: #f4f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 90%;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 35px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+h1 {
+  text-decoration: overline;
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+h2 {
+  text-decoration: underline;
+  color: #005f73;
+  font-size: 1.6em;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0a9396;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul li a:link {
+  color: #ffffff;
+}
+
+nav ul li a:visited {
+  color: #e9d8a6;
+}
+
+nav ul li a:hover {
+  background-color: #ee9b00;
+  color: #001219;
+}
+
+nav ul li a:active {
+  background-color: #ca6702;
+  color: #ffffff;
+}
+#destinations {
+  background-color: #f8fdfd;
+}
+#video {
+  background-color: #f0f7f7;
+}
+#trip {
+  background-color: #f8fdfd;
+}
+
+.card {
+  border: 1px solid #94d2bd;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.price {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #ae2012;
+  margin-right: 8px;
+}
+
+.new-price {
+  color: #005f73;
+  font-size: 1.2em;
+}
+
+/* Responsive Video & Caption Styling */
+.center {
+  text-align: center;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #005f73;
+}
+
+.caption {
+  font-style: italic;
+  color: #555555;
+  margin-top: 8px;
+}
+
+/* Trip Interest Form Styling */
+.trip-form {
+  background-color: #e9f5f5;
+  padding: 20px;
+  border: 2px solid #0a9396;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #888888;
+}
+
+.trip-form button {
+  background-color: #005f73;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.trip-form button:hover {
+  background-color: #0a9396;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #001219;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+footer a:link,
+footer a:visited {
+  color: #94d2bd;
+}
+
+footer a:hover {
+  color: #ee9b00;
+}
