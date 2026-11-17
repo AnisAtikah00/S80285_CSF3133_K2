@@ -1,0 +1,56 @@
+/* Navigation bar list styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1A5276;
+}
+nav li {
+    display: inline-block;
+}
+nav a:link,
+nav a:visited {
+    display: block;
+    background-color: #1A5276;
+    color: #FFFFFF;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a:hover,
+nav a:active {
+    background-color: #E67E22;
+    color: #FFFFFF;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #7F8C8D;
+    margin-right: 6px;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+.feedback-form {
+    background-color: #F8F9F9;
+    border: 1px solid #D5D8DC;
+    padding: 16px;
+    max-width: 450px;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #BDC3C7;
+}
+.feedback-form button {
+    background-color: #1A5276;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+}
+.feedback-form button:hover {
+    background-color: #E67E22;
+}
